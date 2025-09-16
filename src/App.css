@@ -1,42 +1,123 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.MainContainer {
+    background-color: #c7f0c7;
+    width: 100vw;
+    min-height: 100vh;
+    border: 10px solid #238000;
+    
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.Section1 {
+    background-color: #add8e6;
+    flex-wrap: wrap;
+    z-index: 1;
+    padding: 30px;
+    display: flex;
+    gap: 20px;
+    margin: 40px;
+    border: 10px solid #2000ff;
+
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Box1,
+.Box2,
+.Box3 {
+    flex: 1;
+    background-color: #fcdab9;
+    z-index: 2;
+    min-height: 200px;
+    min-width: 200px;
+    border: 10px solid #f78072;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.Box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;    
 }
 
-.card {
-  padding: 2em;
+.InnerBox1,
+.InnerBox2 {
+    height: 80%;
+    width: 47%;
+    background-color: #fac0cb;
+    border: 10px solid #f40005;
 }
 
-.read-the-docs {
-  color: #888;
+.Section2 {
+    padding: 1px;
+    margin: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.leftside {
+    background-color: #fabbbb;
+    z-index: 2;
+    flex: 1;
+    border: 10px solid #a52b2a;
+}
+
+.rightside {
+    z-index: 2;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Box5,
+.Box6 {
+    background-color: #fabbbb;
+    z-index: 2;
+    padding: 120px;
+    flex: 1;
+    border: 10px solid #a52b2a;
+
+}
+
+.Section3 {
+    background-color: #add8e6;
+    flex-wrap: wrap;
+    z-index: 1;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    margin: 40px;
+    border: 10px solid #2000ff;
+}
+
+.Box7 {
+    background-color: #e2deff;
+    padding: 70px;
+    flex: 1;
+    border: 10px solid #6a5acd;
+
+}
+
+.Box8 {
+    background-color: #fcdab9;
+    padding: 10px;
+    flex: 1;
+    border: 10px solid #f78072;
+
+
+}
+
+.Box9 {
+    background-color: #fcdab9;
+    padding: 10px;
+    flex: 1;
+    border: 10px solid #f78072;
+
+}
+
+.Box10 {
+    background-color: #e2deff;
+    padding: 70px;
+    flex: 1;
+    border: 10px solid #6a5acd;
+
 }
