@@ -1,42 +1,83 @@
 import './App.css';
 
-function Headersmallbox({ text }) {
-  return <div className="small-header-box">{text}</div>;
+function HeaderContainer() {
+  return <div className="header-container"></div>;
 }
 
-function Footersmallbox({ text }) {
-  return <div className="small-footer-box">{text}</div>;
+function HeaderContainer2Content({ name }) {
+  return <div className="header-container2-content">{name}</div>;
+}
+
+function HeaderContainer2() {
+  return (
+    <div className="header-container2">
+      <HeaderContainer2Content name="Carl Anton" />
+      <HeaderContainer2Content name="David" />
+    </div>
+  );
+}
+
+function Header() {
+  return (
+    <div className="header">
+      <HeaderContainer />
+      <HeaderContainer2 />
+      <HeaderContainer />
+    </div>
+  );
+}
+
+function BodyContainer() {
+  return <div className="body-container"></div>;
+}
+
+function BodyContainer2Content() {
+  return <div className="body-container2-content"></div>;
+}
+
+function BodyContainer2() {
+  return (
+    <div className="body-container2">
+      <BodyContainer2Content />
+      <BodyContainer2Content />
+    </div>
+  );
+}
+
+function Body() {
+  return (
+    <div className="body">
+      <BodyContainer />
+      <BodyContainer2 />
+    </div>
+  );
+}
+
+function FooterContainer1() {
+  return <div className="footer-container1"></div>;
+}
+
+function FooterContainer2({ text }) {
+  return <div className="footer-container2">{text}</div>;
+}
+
+function Footer() {
+  return (
+    <div className="footer">
+      <FooterContainer1 />
+      <FooterContainer2 text="C-PCIT9" />
+      <FooterContainer2 text="IT3A" />
+      <FooterContainer1 />
+    </div>
+  );
 }
 
 function App() {
   return (
-    <div className="MainContainer">
-      {/* (Header) */}
-      <div className="Section1">
-        <div className="Box1"></div>
-        <div className="Box2">
-          <Headersmallbox text="CarlAnton" />
-          <Headersmallbox text="David" />
-        </div>
-        <div className="Box3"></div>
-      </div>
-
-      {/* (Content) */}
-      <div className="Section2">
-        <div className="leftside"></div>
-        <div className="rightside">
-          <div className="Box5"></div>
-          <div className="Box6"></div>
-        </div>
-      </div>
-
-      {/* (Footer) */}
-      <div className="Section3">
-        <div className="Box7"></div>
-        <Footersmallbox text="C-PCIT9" />
-        <Footersmallbox text="IT3A" />
-        <div className="Box10"></div>
-      </div>
+    <div className="container">
+      <Header />
+      <Body />
+      <Footer />
     </div>
   );
 }
