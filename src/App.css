@@ -1,123 +1,128 @@
-.MainContainer {
-    background-color: #c7f0c7;
-    width: 100vw;
-    min-height: 100vh;
-    border: 10px solid #238000;
-    
+.container {
+  border: 6px solid green;
+  background-color: #c7f0c7;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 25px;
 }
 
-.Section1 {
-    background-color: #add8e6;
-    flex-wrap: wrap;
-    z-index: 1;
-    padding: 30px;
-    display: flex;
-    gap: 20px;
-    margin: 40px;
-    border: 10px solid #2000ff;
-
+.header {
+  border: 6px solid blue;
+  background-color: #b3e0ff;
+  padding: 5px;
 }
 
-.Box1,
-.Box2,
-.Box3 {
-    flex: 1;
-    background-color: #fcdab9;
-    z-index: 2;
-    min-height: 200px;
-    min-width: 200px;
-    border: 10px solid #f78072;
+.header-content {
+  background-color: #b3e0ff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
-.Box2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;    
+.box-left, .box-right {
+  background-color: #ffd8b3;
+  border: 6px solid #f78072;
+  height: 100px;
+  flex: 1 1 290px;
 }
 
-.InnerBox1,
-.InnerBox2 {
-    height: 80%;
-    width: 47%;
-    background-color: #fac0cb;
-    border: 10px solid #f40005;
+.small-box-container {
+  background-color: #ffd8b3;
+  border: 6px solid #f78072;
+  flex: 2 1 200px;
+  display: flex;
+  flex-direction: row;
+  height: 90px;
+  padding: 5px;
 }
 
-.Section2 {
-    padding: 1px;
-    margin: 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    gap: 20px;
+.small-header-box {
+  height: 80px;
+  width: 40px;
+  background-color: #fac0cb;
+  border: 6px solid #f40005;
+  flex: 1;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 40px;
 }
 
-.leftside {
-    background-color: #fabbbb;
-    z-index: 2;
-    flex: 1;
-    border: 10px solid #a52b2a;
+.content {
+  display: flex;
+  flex-grow: 1;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
-.rightside {
-    z-index: 2;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.large-box {
+  background-color: #ffb3b3;
+  border: 6px solid #a52b2a;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.Box5,
-.Box6 {
-    background-color: #fabbbb;
-    z-index: 2;
-    padding: 120px;
-    flex: 1;
-    border: 10px solid #a52b2a;
-
+.right-side {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 10px;
 }
 
-.Section3 {
-    background-color: #add8e6;
-    flex-wrap: wrap;
-    z-index: 1;
-    padding: 20px;
-    display: flex;
-    gap: 20px;
-    margin: 40px;
-    border: 10px solid #2000ff;
+.medium-box1 {
+  background-color: #ffb3b3;
+  border: 6px solid #a52b2a;
+  flex-grow: 1;
 }
 
-.Box7 {
-    background-color: #e2deff;
-    padding: 70px;
-    flex: 1;
-    border: 10px solid #6a5acd;
-
+.medium-box2 {
+  background-color: #ffb3b3;
+  border: 6px solid #a52b2a;
+  flex-grow: 1;
 }
 
-.Box8 {
-    background-color: #fcdab9;
-    padding: 10px;
-    flex: 1;
-    border: 10px solid #f78072;
-
-
+.footer {
+  border: 6px solid blue;
+  background-color: #b3c6ff;
+  padding: 5px;
 }
 
-.Box9 {
-    background-color: #fcdab9;
-    padding: 10px;
-    flex: 1;
-    border: 10px solid #f78072;
-
+.footer-content {
+  background-color: #b3c6ff;
+  padding: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
-.Box10 {
-    background-color: #e2deff;
-    padding: 70px;
-    flex: 1;
-    border: 10px solid #6a5acd;
+.small-box6, .small-box3 {
+  background-color: #e6e6ff;
+  border: 6px solid #6a5acd;
+  height: 80px;
+  flex: 1 1 300px;
+}
 
+.small-footer-box{
+  background-color: #ffd8b3;
+  border: 6px solid #f78072;
+  height: 80px;
+  flex: 1 1 120px;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 40px;
 }
