@@ -3,5 +3,10 @@
 }
 
 body {
-    margin: 0;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 45px;
+    color: #fff;
+    max-width: 2000px;
+    margin: auto;
 }
